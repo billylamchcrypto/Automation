@@ -2,6 +2,7 @@ from page.login_page import LoginPage
 
 
 class AllMethod(LoginPage):
+
     def login_step(self):
         self.login_account()
         self.click_email()
