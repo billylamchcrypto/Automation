@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "billy-final"
+version = "0.1.0"
+description = ""
+authors = ["billylam <billy.lam@crypto.com>"]
+readme = "README.md"
+packages = [{include = "billy_final"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+appium-python-client = "^2.8.1"
+pyyaml = "^6.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
