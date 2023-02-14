@@ -5,5 +5,5 @@ from steps.login_action import AllMethod
 
 class TestAccountLogin:
     k = AppStart.start()
-    k.login_step()
+    AllMethod.login_step(k)
 

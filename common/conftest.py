@@ -6,7 +6,6 @@ import time
 
 
 class AppStart:
-    driver: webdriver = None
 
     @classmethod
     def start(cls):
@@ -27,7 +26,7 @@ class AppStart:
         cls.driver = webdriver.Remote('http://' + str(data['ip']) + ':' + str(data['port']) + '/wd/hub', desired_caps)
         cls.driver.implicitly_wait(20)
         time.sleep(3)
-        return AllMethod(cls.driver)
+        return cls.driver
 
     @classmethod
     def quit(cls):

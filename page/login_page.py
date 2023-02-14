@@ -2,6 +2,7 @@ from page.base_page import BasePage
 
 
 class LoginPage(BasePage):
+
     loginButton = "l86"
     emailBox = "102"
     emailCtn = "qir"
