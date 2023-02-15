@@ -3,7 +3,7 @@ deviceName: emulator-5554
 platformName: Android
 platformVersion: 10
 automationName: UiAutomator2
-app: /Users/billylam/PycharmProjects/billy_automation/apk/37406.apk
+app: /Users/billylam/Downloads/37406.apk
 ip: 127.0.0.1
 port: 4723
 unicodeKeyboard: true
