@@ -1,7 +1,6 @@
 import yaml
 from appium import webdriver
-from page.login_page import LoginPage
-from steps.login_action import AllMethod
+from pathlib import Path
 import time
 
 
@@ -9,7 +8,7 @@ class AppStart:
 
     @classmethod
     def start(cls):
-        stream = open('/Users/billylam/PycharmProjects/billy_automation/common/device.yml', 'r')
+        stream = open(str(Path().cwd().parent / 'common/device.yml'), 'r')
         data = yaml.load(stream, Loader=yaml.FullLoader)
 
         desired_caps = {}

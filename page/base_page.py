@@ -1,5 +1,6 @@
 from appium.webdriver.common.appiumby import By
 import yaml
+from pathlib import Path
 
 
 class BasePage(object):
@@ -7,7 +8,7 @@ class BasePage(object):
         self.driver = driver
 
     def find_element(self, value):
-        stream = open('/Users/billylam/PycharmProjects/billy_automation/common/device.yml', 'r')
+        stream = open(str(Path().cwd().parent / 'common/device.yml'), 'r')
         data = yaml.load(stream, Loader=yaml.FullLoader)
 
         if data['platformName'] == "Android":
