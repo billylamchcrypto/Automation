@@ -1,4 +1,5 @@
 from page.login_page import LoginPage
+from page.base_page import BasePage
 
 
 class AllMethod(object):

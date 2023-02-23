@@ -7,9 +7,6 @@ class LoginPage(BasePage):
     emailBox = "102"
     emailCtn = "qir"
 
-    def __init__(self, driver):
-        self.driver = driver
-
     def login_account(self):
         return self.find_element(self.loginButton).click()
 
