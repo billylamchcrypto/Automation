@@ -4,6 +4,6 @@ from steps.login_action import AllMethod
 
 
 class TestAccountLogin:
-    k = AppStart.start()
-    AllMethod.login_step(k)
+    driver = AppStart.start()
+    AllMethod(driver).login_step()
 

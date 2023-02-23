@@ -6,11 +6,11 @@ class AllMethod(object):
         self.driver = driver
 
     def login_step(self):
-        drive = LoginPage(self)
-        drive.login_account()
-        drive.click_email()
-        drive.enter_email()
-        drive.email_ctn()
+        driver = LoginPage(self.driver)
+        driver.login_account()
+        driver.click_email()
+        driver.enter_email()
+        driver.email_ctn()
 
 
 

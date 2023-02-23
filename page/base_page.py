@@ -16,6 +16,12 @@ class BasePage(object):
         else:
             return self.driver.find_element(By.IOS_CLASS_CHAIN, value)
 
+# stream = open(str(Path().cwd().parent / 'common/device.yml'), 'r')
+#         data = yaml.load(stream, Loader=yaml.FullLoader)
+#         if data['platformName'] == "Android":
+#             os = AOS
+#         elif:
+#             os = IOS
 
 
 
